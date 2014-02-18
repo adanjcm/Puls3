@@ -111,6 +111,9 @@ nav #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px #22BCE0 solid;
+	margin-bottom: 3em;
+	min-height: 128px; /* La linea ya no vuelve a estar por debajo de la imagen*/
+	position: relative; /* relative no afecta el modelo de caja y absolute sí lo afecta*/
 }
 #contenido .item p 
 {
@@ -145,4 +148,16 @@ nav #publicar_nav a
 {
 	color: #444;
 	text-decoration: none;
+}
+#contenido .item .votacion
+{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	border: 2px red;
+	margin: 3px 0 0 0;
+	padding: 0.5em 0;
+	position: absolute; /*para darle forma a los botones de votación*/
+	text-align: center;
+	top: 100%;
+	width: 96px;
 }
