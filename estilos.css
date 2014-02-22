@@ -162,6 +162,16 @@ nav #publicar_nav a
 	color: #A7A7A7;
 	font-size: 0.9em;
 }
+#contenido .item .datos_item .guardar_item
+{
+	text-decoration: none;
+}
+#contenido .item .datos_item .guardar_item:after
+{
+	color: #FD5;
+	content: "\e602";
+	font-family: "icomoon";
+}
 #contenido .item .datos_item .tag_item
 {
 	background: #22BCE0;
