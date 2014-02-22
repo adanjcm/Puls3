@@ -162,11 +162,12 @@ nav #publicar_nav a
 	color: #A7A7A7;
 	font-size: 0.9em;
 }
-#contenido .item .datos_item .comentario_item
+#contenido .item .datos_item .comentarios_item
 {
 	background: #878787;
 	border-radius: 4px;
 	color: white;
+	margin: 0 0 0 3px;
 	padding: 4px; 
 	text-decoration: none;
 }
