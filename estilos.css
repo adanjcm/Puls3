@@ -1,3 +1,14 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-xopzgg');
+	src:url('fonts/icomoon.eot?#iefix-xopzgg') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-xopzgg') format('woff'),
+		url('fonts/icomoon.ttf?-xopzgg') format('truetype'),
+		url('fonts/icomoon.svg?-xopzgg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a 
 {
 	color: #DD4F24;	
@@ -51,8 +62,17 @@ header #avatar figcaption
 	background: #22BCE0;
 	float: right;
 	height: 50px;
-	padding: 0 2px; /* 0 arriba y abajo y 2px a los lados, se coloca padding porque es margen interno hace todo el objeto más grande eso hace que toda esa area sea clickeable*/
+	/* padding: 0 2px;  0 arriba y abajo y 2px a los lados, se coloca padding porque es margen interno hace todo el objeto más grande eso hace que toda esa area sea clickeable*/
+	line-height: 50px;
 }
+header #avatar figcaption:after
+{
+	content: "\e604";
+	font-family: "icomoon";
+	font-size: 0.7em;
+	opacity: 0.5;
+}
+
 header #avatar img 
 {
 	float: left;
@@ -88,17 +108,39 @@ nav ul li a
 nav #flechita_nav a
 {
 	background: #22BCE0;
-	padding: 0.5em;
+	padding: 0.5em 0;
 	text-decoration: none;
+}
+nav #flechita_nav a:after
+{
+	content: "\e603";
+	font-family: "icomoon";
+	opacity: 0.6;
 }
 nav #publicar_nav
 {
+	
+	background: #DD4F24;
 	float: right;
 	margin-right: 0;	
+	padding-right: 1em;
+	position: relative;
+
+}
+nav #publicar_nav:after
+{
+	color: rgba(255,255,255,0.5);
+	content: "\e601";
+	font-family: "icomoon";
+	font-size: 1.8em;
+	position: absolute;
+	right: 0;
+	top: 0;
+
 }
 nav #publicar_nav a
 {
-	background: #DD4F24;
+	display: inline-block;
 	padding: 0.5em 1em;
 	text-decoration: none;
 }
@@ -160,4 +202,27 @@ nav #publicar_nav a
 	text-align: center;
 	top: 100%;
 	width: 96px;
+}
+#contenido .item .votacion a 
+{
+	text-decoration: none;
+}
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
+
+#contenido .item .votacion .down:after 
+{
+	color: red;
+	content: "\e604";
+	
+}
+#contenido .item .votacion .up:after 
+{
+	color: green;
+	content: "\e605";
 }
